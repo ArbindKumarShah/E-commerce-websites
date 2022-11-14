@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>E-Commerce| About Us</title>
+    <link rel="stylesheet" type="text/css" href="styless.css">
+    <script src="https://kit.fontawesome.com/691ee9a2da.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="nav nav_top">
+        <div class="logo">
+            <a href="#"><img src="web pictures/logo.jpg" alt="" width="100px" height="">
+            </a>
+        </div>
+
+        <div class="nav_side">
+            <a href="home.html">Home</a>
+            <a href="about.html">About US</a>
+            <a href="services.html">Services</a>
+            <a href="blog.html">Blogs</a>
+            <a href="contact.html">Contact</a>
+            <a href="Login.html">Login</a>
+        </div>
+    </nav>
+
+
+    <div class="about_us">
+        <h2>About Us</h2>
+        <div class="about_content">
+            <p>we are always 24 hours available for your support and help. You can contact us anytime. we are happy to help online and offline mode sokindly follow our rules and regulationsso that we can maintain peace and grace towards ourgod customer.All
+                our staffs are polite and well vaccinated. We take care of our customers and their belongigs. our items will be full secured and there wan't be any risk in travelling as we have already done insurance of our items.I would like to suggest
+                my customers do not believe on roumers. If our customers have any doubt then kindly contact our service customer cares or also you can contact to our social medias. Our employees will you in touch as soon as possibl. I request our customers
+                to make a shopping and give us chance to speread our love and unity towards our lovely customers. We provide peaceful environment and treat the customer like family members
+            </p>
+        </div>
+
+
+
+        <h2>Our Mission</h2>
+        <p>Our mission is to provide the productive and satisfactory satisfaction to our customers. Our mission is also to provide good services to the our lovely customers. Our aim is to provide good enironment towards our customer so that we can increase
+            our production and market. Our company has been started in order to serve the people. We will also improve both the quality and quantity of the customers and we also take feedback from the customer and our love one. Hope this will be enough
+            for our clients and customers. We are very happy as our mission is going on as we are doing our work emotionally and happily. It helps us to increase the number of employement opportunities ink our society and country and helps in improving
+            the quality of our clients and custoers.Our main mission is to improve the life and strategies of clients and employees
+        </p>
+    </div>
+
+    <div class="feed">
+        <h2>Write a review</h2>
+        <div class="feed_form">
+            <form name="submit-googlesheet" method="post">
+                <input type="text" name="Name" placeholder="Name"><br>
+                <input type="email" name="Email" placeholder="Email ID"><br>
+                <input type="number" name="Number" placeholder="Contact Number"><br>
+                <textarea rows="5" cols="7" name="Review" placeholder=" write your review "></textarea><br>
+                <button type="submit ">Submit</button>
+            </form>
+        </div>
+    </div>
+    <!-- FOOTER IS USED FOR SOCIAL MEDIAS AND DOCUMENTS LINKING PURPOSES -->
+    <footer>
+        <div class="footer_logo ">
+            <a href="#"><img src="web pictures/logo.jpg" alt="" width="100px" height="">
+        </div>
+
+        <div class="pages ">
+            <h3>pages</h3>
+            <a href="http://127.0.0.1:5500/Advance_E-Commerce_Website.html">Home</a>
+            <a href="about.html">About Us</a>|
+            <a href=" ">Services</a>|
+            <a href=" ">Blogs</a>|
+            <a href=" ">Login</a>|
+            <a href=" ">Sign</a>|
+        </div>
+
+        <div class="doc ">
+            <h3>Documents</h3>
+            <a href=" ">Privacy Policy</a>|
+            <a href=" ">Terms of Uses</a>|
+            <a href=" ">Refund policy</a>|
+        </div>
+
+        <div class="Social ">
+            <h3>Follow Us</h3>
+            <a href=" https://www.facebook.com/1Stopai-102490171820303/ " target="_blank "><i class="fa-brands fa-facebook "></i></a>|
+            <a href="https://www.instagram.com/p/CRjD4gzB8vA/ " target="_blank "><i class="fa-brands fa-instagram "></i></a>|
+            <a href="https://www.linkedin.com/company/1stop-ai/?originalSubdomain=in " target="_blank "><i class="fa-brands fa-linkedin-in "></i></a>|
+        </div>
+
+        <div class="Contact ">
+            <h3>Contact Us</h3>
+            <a href="https://api.whatsApp.com/send?phone=+918252017128 " target="_blank "><i class="fa-brands fa-whatsapp "></i></a>|
+
+            <a href="tel: +918252017128"><i class="fa fa-volume-control-phone " aria-hidden="true "></i></a>|
+
+            <a href="mailto:arbindshah100@gmail.com"><i class="fa fa-envelope-o " aria-hidden="true "></i></a>|
+
+
+        </div>
+
+        <hr>
+        <p>Copyright &copy;2022 E-Shopping .All rights reserved</p>
+    </footer>
+
+    <script type="text/javascript">
+        const scriptURL =
+            'https://script.google.com/macros/s/AKfycbyDKqgb0UpxRlo7cewJc8PhEu8oUwA_xKEUjnJa-hPZV43Jedrta1Axnr7LfqyhVHPirg/exec'
+        const form = document.forms['submit-googlesheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => alert(
+                    "Thanks for you valuable feedback, keep patience,we will get in touch soon "))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+</html>
